@@ -1,2 +1,3 @@
 #!/bin/bash
-find . -name "hello" | chown -R betty hello
+if [$(find . -type f -user guillaume -name "hello")]; then
+       	chown -R betty hello
